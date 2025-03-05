@@ -1,0 +1,82 @@
+body,ul{
+    margin: 0;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+}
+
+.menu{
+    height: 100vh;
+    width: 80vw;
+    background: hotpink;
+    position: fixed;
+    top: 0;
+    right: -90vw;
+    transition: right 0.3s;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    z-index: 10;
+    top: 6vh;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: inline;
+}
+
+.menu-button i.material-icons{
+    font-size: 2.5rem;
+}
+
+.show{
+    right: 0;
+}
+
+.fade-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+    top: 6vh;
+}
+
+.fade-layer.visible{
+    display: block;
+}
+
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 90vh 10vh 10vh 40vh 40vh 30vh;
+    grid-template-areas: 
+    'hd'
+    'sc1'
+    'sc2'
+    'sc3'
+    'sc4'
+    'sc5'
+    'ft';
+    gap: 15px;
+}
+
+header{
+    grid-area: hd;
+    display: grid;
+    grid-template-areas: 
+    'rub nav'
+    ;
+    grid-template-rows: 75% 25%;
+    grid-template-columns: 1fr;
+
+}
+
+#rubrik{
+    grid-area: rub;
+    background-color: aquamarine;
+}
+nav{
+    grid-area: nav;
+}
