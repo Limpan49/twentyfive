@@ -9,12 +9,11 @@ body, ul {
     width: 80vw;
     background: hotpink;
     position: fixed;
-    top: 0;
     right: -90vw;
     transition: right 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0, 0, 0, 0.75);
     z-index: 10;
-    top: 10vh;
+    top: 15vh;
   }
   
   .buttoninsidemenu.hover {
@@ -135,6 +134,19 @@ body, ul {
     text-align: center;
   }
   
+  .box2 {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: blue;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .box2:hover {
+    transform: scale(0.9);
+  }
+
   #section3 {
     grid-area: sc3;
     background-color: lightcoral;
@@ -147,8 +159,55 @@ body, ul {
   #section5 {
     grid-area: sc5;
   }
-  
 
+  #wrapper2 {
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'hd'
+    'sc21 sc22'
+    'sc23 sc24'
+    'sc25 sc26'
+    'ft';
+    gap: 10px;
+    min-height: 100vh;
+   }
+
+  #section21 {
+    grid-area: sc21;
+    background-color: aqua;
+
+  }
+
+  #section22 {
+    grid-area: sc22;
+    background-color: aqua;
+
+  }
+
+  #section23 {
+    grid-area: sc23;
+    background-color: aqua;
+
+  }
+
+  #section24 {
+    grid-area: sc24;
+    background-color: aqua;
+
+  }
+
+  #section25 {
+    grid-area: sc25;
+    background-color: aqua;
+
+  }
+
+  #section26 {
+    grid-area: sc26;
+    background-color: aqua;
+  }
 
   #wrapper3 {
     display: grid;
@@ -163,14 +222,43 @@ body, ul {
     'sc35'
     'sc36'
     'sc37'
-    'sc38'
     'ft';
   gap: 10px;
   min-height: 100vh;
   }
 
   #section31 {
-    
+    grid-area: sc31;
+  }
+
+  #section32 {
+    grid-area: sc32;
+    display: flex;
+    font-size: 1.5rem; 
+  }
+  
+  #section33 {
+    grid-area: sc33;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .box {
+    display: flex;
+    width:100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+   
+  }
+
+  #section34 {
+    grid-area: sc34;
   }
 
 
@@ -192,6 +280,10 @@ body, ul {
         width: 100%;
         height:auto;
     }
+
+    .menu {
+        top: 10%;
+    }
 }
 
 
@@ -204,5 +296,9 @@ body, ul {
         object-fit: cover;
         display: block;
         margin: 0 auto;
+    }
+
+    .menu {
+        top: 15%;
     }
 }
