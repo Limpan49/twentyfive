@@ -6,8 +6,8 @@ body, ul {
   
   .menu {
     height: 100vh;
-    width: 80vw;
-    background: hotpink;
+    width: 60vw;
+    background: lightblue;
     position: fixed;
     right: -90vw;
     transition: right 0.3s;
@@ -59,9 +59,24 @@ body, ul {
   }
 
   a:hover {
-    color: red;
+    color: black;
   }
 
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .box {
+    display: flex;
+    width:100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+   
+  }
 
   #wrapper {
     display: grid;
@@ -119,94 +134,54 @@ body, ul {
     background-size: cover;
     background-position: center;
   }
-  
-  #section2 {
-    grid-area: sc2;
-    background-color: lightyellow;
-  }
 
   .box1 {
     width: 50%;
     margin: 20px auto;
     padding: 20px;
-    background-color: blue;
-    border-radius: 10px;
-    text-align: center;
-  }
-  
-  .box2 {
-    width: 50%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: blue;
+    background-color: lightblue;
     border-radius: 10px;
     text-align: center;
   }
 
-  .box2:hover {
+  .box1:hover {
     transform: scale(0.9);
   }
 
-  #section3 {
-    grid-area: sc3;
-    background-color: lightcoral;
-  }
-  
-  #section4 {
-    grid-area: sc4;
-  }
-  
-  #section5 {
-    grid-area: sc5;
-  }
-
-  #wrapper2 {
-    display: flex;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    'hd'
-    'sc21 sc22'
-    'sc23 sc24'
-    'sc25 sc26'
-    'ft';
-    gap: 10px;
-    min-height: 100vh;
-   }
-
-  #section21 {
+  #section21 img {
     grid-area: sc21;
-    background-color: aqua;
-
+    border: 5px solid black;
+    padding: 10px;
   }
 
-  #section22 {
+  #section22 img {
     grid-area: sc22;
-    background-color: aqua;
-
+    border: 5px solid black;
+    padding: 10px;
   }
 
-  #section23 {
+  #section23 img {
     grid-area: sc23;
-    background-color: aqua;
-
+    border: 5px solid black;
+    padding: 10px;
   }
 
-  #section24 {
+  #section24 img {
     grid-area: sc24;
-    background-color: aqua;
-
+    border: 5px solid black;
+    padding: 10px;
   }
 
-  #section25 {
+  #section25 img {
     grid-area: sc25;
-    background-color: aqua;
-
+    border: 5px solid black;
+    padding: 10px;
   }
 
-  #section26 {
+  #section26 img {
     grid-area: sc26;
-    background-color: aqua;
+    border: 5px solid black;
+    padding: 10px;
   }
 
   #wrapper3 {
@@ -220,15 +195,9 @@ body, ul {
     'sc33'
     'sc34'
     'sc35'
-    'sc36'
-    'sc37'
     'ft';
   gap: 10px;
   min-height: 100vh;
-  }
-
-  #section31 {
-    grid-area: sc31;
   }
 
   #section32 {
@@ -236,32 +205,38 @@ body, ul {
     display: flex;
     font-size: 1.5rem; 
   }
-  
-  #section33 {
+
+  #section36 {
+    grid-area: sc36;
+    font-size: 10px;
+  }
+
+  #wrapper4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'hd'
+    'sc41'
+    'sc42'
+    'sc43'
+    'sc44'
+    'sc45'
+    'ft';
+  gap: 10px;
+  min-height: 100vh;
+  }
+
+  #section42 {
+    grid-area: sc32;
+    display: flex;
+    font-size: 1.5rem; 
+  }
+
+  #section46 {
     grid-area: sc33;
+    font-size: 10px;
   }
-
-  .container {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .box {
-    display: flex;
-    width:100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-   
-  }
-
-  #section34 {
-    grid-area: sc34;
-  }
-
-
 
 
   /* Footer Style */
@@ -271,6 +246,7 @@ body, ul {
     color: white;
     text-align: center;
     padding: 20px;
+    
   }
 
  /* CSS för MOBIL*/
@@ -284,6 +260,23 @@ body, ul {
     .menu {
         top: 10%;
     }
+
+    .wrapper2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      'hd'
+      'sc21'
+      'sc22'
+      'sc23'
+      'sc24'
+      'sc25'
+      'sc26'
+      'ft';
+      gap: 10px;
+      min-height: 100vh;
+     }
 }
 
 
@@ -300,5 +293,20 @@ body, ul {
 
     .menu {
         top: 15%;
+    }
+
+    .wrapper2 {
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'hd hd'
+        'sc21 sc22'
+        'sc23 sc24'
+        'sc25 sc26'
+        'ft ft';
+        gap: 10px;
+        min-height: 100vh;
+       }
     }
 }
