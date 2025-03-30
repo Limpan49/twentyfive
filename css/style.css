@@ -276,6 +276,7 @@ body, ul {
       'ft';
       gap: 10px;
       min-height: 100vh;
+      justify-content: center;
      }
 }
 
@@ -309,4 +310,4 @@ body, ul {
         min-height: 100vh;
        }
     }
-}
+
