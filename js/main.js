@@ -28,3 +28,15 @@ document.addEventListener("click", function(event) {
         icon.textContent = "menu";
     }
 });
+
+
+// Följande är skelletkod från W3 SCHOOLS
+function myFunction(divId) { 
+    var x = document.getElementById(divId);
+    if (x.style.display === "none" || x.style.display === "") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  
