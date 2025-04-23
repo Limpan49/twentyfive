@@ -232,32 +232,29 @@ body, ul {
     display: inline-block;
   }
 
-
-  #wrapper4 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    'hd'
-    'sc41'
-    'sc42'
-    'sc43'
-    'sc44'
-    'sc45'
-    'ft';
-  gap: 10px;
-  min-height: 100vh;
+  .chatbotfake{
+    background:#f7f7fa;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.06);
+    padding:1.5rem;
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
   }
-
-  #section42 {
-    grid-area: sc42;
-    display: flex;
-    font-size: 1.5rem; 
+  
+  .chatbotfake header{
+    background:#0066cc;
+    color:#fff;
+    padding:.6rem 1rem;
+    border-radius:.5rem;
+    text-align:center;
   }
-
-  #section46 {
-    grid-area: sc46;
-    font-size: 10px;
+  
+  .bot-msg{
+    background:#e9f1ff;
+    padding:.7rem 1rem;
+    border-radius:1rem;
+    font-size:.9rem;
   }
 
 
@@ -378,6 +375,43 @@ body, ul {
       margin-bottom: 30px;
       margin-left: 25px;
       margin-right: 25px;
+    }
+
+    .chatbotfake {
+      box-shadow:0 2px 8px rgba(0,0,0,.06);
+      margin: 20px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      margin-right: 30%;
+    }
+  
+    #wrapper4 {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+      'hd'
+      'sc41 '
+      'sc42'
+      'sc43'
+      'sc44'
+      'sc45'
+      'ft';
+    gap: 10px;
+    min-height: 100vh;
+    }
+  
+    #section42 {
+      grid-area: sc42;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+      text-align: left;
+    }
+  
+    section.left-align{
+      align-items:flex-start;
+      text-align:left;
     }
 
 }
@@ -517,7 +551,42 @@ body, ul {
     margin-bottom: 30px;
     margin-top: 30px;
     margin-left: 100px;
-    margin-left: 10px;
+    margin-left: 50px;
+  }
+
+  .wrapper4 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'hd hd'
+    'sc41 sc41'
+    'sc42 as41'
+    'sc43 sc43'
+    'ft ft';
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  header        {grid-area:hd;}
+  #section41    {grid-area:sc41;}
+  #section42    {grid-area:sc42;}
+  .chatbotfake  {grid-area:as41;}
+  #section43    {grid-area:sc43;}
+  #footer       {grid-area:ft;}
+
+  section {
+    display: block;
+    text-align:left;
+    padding: 1rem 0;
+    margin: 0;
+  }
+
+  section.centrerad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
 }
