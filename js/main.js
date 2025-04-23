@@ -53,33 +53,3 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 5000);
 }
-
-
-    // Gömmer navbaren eller menun när man skrollar ner i desktop 
-
-let lastScrollTop = 0;
-const headers = document.querySelectorAll('header');
-const menu = document.querySelector('.menu');
-
-window.addEventListener('scroll', function () {
-  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (window.innerWidth >= 501) {
-    if (currentScroll > lastScrollTop && currentScroll > 100) {
-      headers.forEach(header => header.classList.add('hideheader'));
-      if (menu && menu.classList.contains("show")) {
-        menu.classList.remove("show");
-
-        const fadeLayer = document.querySelector(".fade-layer");
-        if (fadeLayer) fadeLayer.classList.remove("visible");
-
-        const icon = document.getElementById("menu-toggle")?.querySelector("i.material-icons");
-        if (icon) icon.textContent = "menu";
-      }
-    } else if (currentScroll < lastScrollTop) {
-      headers.forEach(header => header.classList.remove('hideheader'));
-    }
-  }
-
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-});
