@@ -377,7 +377,7 @@ body, ul {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      text-align: left;
       margin-bottom: 30px;
       margin-left: 25px;
       margin-right: 25px;
@@ -508,6 +508,36 @@ body, ul {
       object-fit: cover;
     }
 
+    #section21 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    #section22 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    #section23 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    #section24 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    #section25 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    #section26 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
     .wrapper3 {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -553,7 +583,7 @@ body, ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
     margin-top: 30px;
     margin-left: 100px;
